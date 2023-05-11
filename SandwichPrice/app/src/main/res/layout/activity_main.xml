@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Sandwich"
+        android:textSize="28sp"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ham (5,000)"
+            android:textSize="28sp"
+            android:id="@+id/ham"
+            android:onClick="onClick"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuna (4,000)"
+            android:textSize="28sp"
+            android:id="@+id/tuna"
+            android:onClick="onClick"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chicken (4,500)"
+            android:textSize="28sp"
+            android:id="@+id/chicken"
+            android:onClick="onClick"/>
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Topping"
+        android:textSize="28sp"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bacon (1,000)"
+        android:textSize="28sp"
+        android:id="@+id/bacon"
+        android:onClick="onClick"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cheese (500)"
+        android:textSize="28sp"
+        android:id="@+id/cheese"
+        android:onClick="onClick"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avocado (1,500)"
+        android:textSize="28sp"
+        android:id="@+id/avocado"
+        android:onClick="onClick"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textSize="28sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="36sp"
+        android:textColor="#FF0000"
+        android:id="@+id/price"/>
+
+
+</LinearLayout>
